@@ -21,11 +21,11 @@ public class Author {
 	private Long id;
 	private String firstName;
 	private String lastName;
-	
-	@ManyToMany(fetch=FetchType.EAGER)
+
+	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name="authored_books",
-	joinColumns=@JoinColumn(name="author_id"),
-	inverseJoinColumns=@JoinColumn(name="book_id"))
+			joinColumns=@JoinColumn(name="author_id"),
+			inverseJoinColumns=@JoinColumn(name="book_id"))
 	private Set<Book> books = new HashSet<>();
 
 
