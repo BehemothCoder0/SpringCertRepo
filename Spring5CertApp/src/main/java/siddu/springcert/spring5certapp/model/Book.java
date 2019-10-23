@@ -16,9 +16,10 @@ public class Book {
 	
 	private String isbn;
 	
-	private String publisher;
+	@OneToOne(fetch=FetchType.EAGER)
+	private Publisher publisher;
 
-	@ManyToMany(fetch = FetchType.EAGER)
+	@ManyToMany(fetch = FetchType.EAGER,mappedBy="books")
 	private Set<Author> authors = new HashSet<>();
 	
 	
@@ -31,7 +32,7 @@ public class Book {
 	
 	
 
-	public Book(String title, String isbn, String publisher) {
+	public Book(String title, String isbn, Publisher publisher) {
 		super();
 		this.title = title;
 		this.isbn = isbn;
@@ -42,7 +43,7 @@ public class Book {
 
 
 
-	public Book(String title, String isbn, String publisher, Set<Author> authors) {
+	public Book(String title, String isbn, Publisher publisher, Set<Author> authors) {
 		super();
 		this.title = title;
 		this.isbn = isbn;
@@ -81,11 +82,11 @@ public class Book {
 		this.isbn = isbn;
 	}
 
-	public String getPublisher() {
+	public Publisher getPublisher() {
 		return publisher;
 	}
 
-	public void setPublisher(String publisher) {
+	public void setPublisher(Publisher publisher) {
 		this.publisher = publisher;
 	}
 
