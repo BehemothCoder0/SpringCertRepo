@@ -1,0 +1,1 @@
+mvn clean install -s C:\software\apache-maven-3.5.4\conf\settings.xml

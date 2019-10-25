@@ -1,14 +1,13 @@
-package siddu.springcert.spring5certapp;
+package siddu.springcert.spring5petclinic.springsiddupetclinic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Spring5CertAppApplication {
+public class SpringSidduPetClinicApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Spring5CertAppApplication.class, args);
-		
+		SpringApplication.run(SpringSidduPetClinicApplication.class, args);
 	}
 
 }
