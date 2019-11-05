@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>siddu.springcert.spring5petclinic</groupId>
 	<artifactId>spring-siddu-pet-clinic</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>spring-siddu-pet-clinic</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -36,6 +36,7 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
 					<goals>install</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
 					<checkModificationExcludes>
 						<checkModificationExclude>pom.xml</checkModificationExclude>
 						<checkModificationExclude>**</checkModificationExclude>
@@ -47,7 +48,7 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/BehemothCoder0/SpringCertRepo.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>spring-siddu-pet-clinic-0.0.2</tag>
   </scm>
 
 	<packaging>pom</packaging>
