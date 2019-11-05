@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>siddu.springcert.spring5petclinic</groupId>
 	<artifactId>spring-siddu-pet-clinic</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>spring-siddu-pet-clinic</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -47,7 +47,7 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/BehemothCoder0/SpringCertRepo.git</developerConnection>
-	  <tag>spring-siddu-pet-clinic-0.0.1</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 	<packaging>pom</packaging>
