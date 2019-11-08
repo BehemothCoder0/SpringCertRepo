@@ -4,9 +4,6 @@ import java.util.Set;
 
 import siddu.springcert.spring5petclinic.springsiddupetclinic.model.Owner;
 
-public interface OwnerService {
+public interface OwnerService extends BaseService<Owner,Long>{
 	Owner findByLastName(String lastName);
-	Owner findById(Long id);
-	Owner save(Owner owner);
-	Set<Owner> findAll();
 }
