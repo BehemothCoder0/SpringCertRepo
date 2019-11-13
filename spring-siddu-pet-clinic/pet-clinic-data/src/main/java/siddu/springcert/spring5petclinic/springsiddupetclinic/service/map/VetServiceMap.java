@@ -3,9 +3,9 @@ package siddu.springcert.spring5petclinic.springsiddupetclinic.service.map;
 import java.util.Set;
 
 import siddu.springcert.spring5petclinic.springsiddupetclinic.model.Vet;
-import siddu.springcert.spring5petclinic.springsiddupetclinic.service.BaseService;
+import siddu.springcert.spring5petclinic.springsiddupetclinic.service.VetService;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements BaseService<Vet, Long>{
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
 
 	@Override
 	public Vet findById(Long id) {

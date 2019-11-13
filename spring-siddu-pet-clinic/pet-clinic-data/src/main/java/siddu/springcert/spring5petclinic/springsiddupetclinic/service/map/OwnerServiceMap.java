@@ -1,15 +1,12 @@
 package siddu.springcert.spring5petclinic.springsiddupetclinic.service.map;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 import siddu.springcert.spring5petclinic.springsiddupetclinic.model.Owner;
-import siddu.springcert.spring5petclinic.springsiddupetclinic.service.BaseService;
+import siddu.springcert.spring5petclinic.springsiddupetclinic.service.OwnerService;
 
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements BaseService<Owner, Long>{
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
 	@Override
 	public Owner findById(Long id) {
@@ -34,6 +31,12 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
 	@Override
 	public void deleteById(Long id) {
 		super.deleteById(id);
+	}
+
+	@Override
+	public Owner findByLastName(String lastName) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
