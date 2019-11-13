@@ -2,9 +2,12 @@ package siddu.springcert.spring5petclinic.springsiddupetclinic.service.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import siddu.springcert.spring5petclinic.springsiddupetclinic.model.Pet;
 import siddu.springcert.spring5petclinic.springsiddupetclinic.service.PetService;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService{
 
 	@Override

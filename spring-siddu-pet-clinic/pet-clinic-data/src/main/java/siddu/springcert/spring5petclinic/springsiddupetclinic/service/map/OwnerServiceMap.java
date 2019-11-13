@@ -2,10 +2,12 @@ package siddu.springcert.spring5petclinic.springsiddupetclinic.service.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import siddu.springcert.spring5petclinic.springsiddupetclinic.model.Owner;
 import siddu.springcert.spring5petclinic.springsiddupetclinic.service.OwnerService;
 
-
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
 	@Override
